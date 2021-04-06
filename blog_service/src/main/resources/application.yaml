@@ -1,0 +1,32 @@
+server:
+  port: 8001
+
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+  application:
+    name: blog_service
+  datasource:
+    url: jdbc:mysql://3l43723a04.wicp.vip:36336/my_blog?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: yhx5407582588
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+dubbo:
+  protocol:
+    port: -1
+    name: dubbo
+  scan:
+    base-packages: com.yaohuaxiang.blog.serviceImpl
+  registry:
+    address: spring-cloud://localhost
+  cloud:
+    subscribed-services: sys_service
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/**/*.xml

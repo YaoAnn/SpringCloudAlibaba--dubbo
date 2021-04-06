@@ -1,0 +1,9 @@
+com\yaohuaxiang\common\entity\common\BaseEntity.class
+com\yaohuaxiang\common\entity\blog\Comment.class
+com\yaohuaxiang\common\entity\blog\Blog.class
+com\yaohuaxiang\common\entity\common\ResultEntity.class
+com\yaohuaxiang\common\entity\common\BizException.class
+com\yaohuaxiang\common\handler\MyMetaObjectHandler.class
+com\yaohuaxiang\common\handler\MyExceptionHandler.class
+com\yaohuaxiang\common\entity\sys\User.class
+com\yaohuaxiang\common\entity\blog\Author.class
